@@ -30,6 +30,13 @@ cd operator-sdk
 git checkout master
 make dep
 make install
+
+mkdir -p $GOPATH/src/github.com/agilesolutions/agilesolutions
+cd $GOPATH/src/github.com/agilesolutions
+git clone https://github.com/agilesolutions/keycloak-operator.git
+cd keycloak-operator
+make code/compile
+
 ```
 
 ## Help and Documentation

@@ -79,7 +79,7 @@ test/coverage: test/coverage/prepare
 # Local Development          #
 ##############################
 .PHONY: setup
-setup: setup/mod setup/githooks code/gen
+setup: setup/mod setup/operator-sdk code/gen
 
 .PHONY: setup/githooks
 setup/githooks:
