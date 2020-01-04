@@ -41,7 +41,7 @@ make setup
 
 ## running controller
 
-GOTO [katacoda and run this](https://www.katacoda.com/courses/kubernetes/playground)
+GOTO [kubernetes playground](https://www.katacoda.com/courses/kubernetes/playground)
 
 ```
 git clone https://github.com/agilesolutions/keycloak-operator.git
