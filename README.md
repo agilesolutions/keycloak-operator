@@ -6,6 +6,31 @@
 # Keycloak Operator
 A Kubernetes Operator based on the Operator SDK for creating and syncing resources in Keycloak.
 
+## Install Go and Operator SDK
+
+GOTO [katacoda and run this](https://www.katacoda.com/courses/kubernetes/launch-single-node-cluster)
+
+curl -LO https://dl.google.com/go/go1.12.3.linux-amd64.tar.gz
+tar -C /usr/local -xzf go1.12.3.linux-amd64.tar.gz
+export PATH=$PATH:/usr/local/go/bin
+mkdir /root/go
+export GOPATH=/root/go
+export GOBIN=/usr/local/go/bin
+export PATH=$PATH:$(go env GOPATH)/bin
+go env GOPATH
+
+curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+
+
+mkdir -p $GOPATH/src/github.com/operator-framework
+cd $GOPATH/src/github.com/operator-framework
+git clone https://github.com/operator-framework/operator-sdk
+cd operator-sdk
+git checkout master
+make dep
+make install
+
+
 ## Help and Documentation
 
 The documentation might be found in the  [docs](./docs/README.asciidoc) directory.
