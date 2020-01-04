@@ -39,6 +39,31 @@ make setup
 
 ```
 
+## running controller
+
+GOTO [katacoda and run this](https://www.katacoda.com/courses/kubernetes/launch-single-node-cluster)
+
+```
+git clone https://github.com/keycloak/keycloak-operator.git
+cd keycloak-operator
+kubectl apply -f deploy/crds/
+kubectl create namespace keycloak
+kubectl apply -f deploy/role.yaml -n keycloak
+kubectl apply -f deploy/role_binding.yaml -n keycloak
+kubectl apply -f deploy/service_account.yaml -n keycloak
+kubectl apply -f deploy/operator.yaml  -n keycloak
+kubectl apply -f deploy/examples/keycloak/keycloak.yaml -n keycloak
+kubectl apply -f deploy/examples/realm/realm_with_users.yaml -n keycloak
+watch kubectl get all -n keycloak
+
+
+make cluster/prepare
+make cluster/create/examples
+
+make cluster/clean
+``
+
+
 ## Help and Documentation
 
 The documentation might be found in the  [docs](./docs/README.asciidoc) directory.
