@@ -8,6 +8,8 @@ A Kubernetes Operator based on the Operator SDK for creating and syncing resourc
 
 ## Install Go and Operator SDK
 
+LEARN ABOUT [Operator Framework](https://www.katacoda.com/openshift/courses/operatorframework)
+
 GOTO [katacoda and run this](https://www.katacoda.com/courses/kubernetes/launch-single-node-cluster)
 
 ```
