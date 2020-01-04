@@ -44,7 +44,7 @@ make setup
 GOTO [katacoda and run this](https://www.katacoda.com/courses/kubernetes/launch-single-node-cluster)
 
 ```
-git clone https://github.com/keycloak/keycloak-operator.git
+git clone https://github.com/agilesolutions/keycloak-operator.git
 cd keycloak-operator
 kubectl apply -f deploy/crds/
 kubectl create namespace keycloak
