@@ -35,7 +35,7 @@ mkdir -p $GOPATH/src/github.com/agilesolutions/agilesolutions
 cd $GOPATH/src/github.com/agilesolutions
 git clone https://github.com/agilesolutions/keycloak-operator.git
 cd keycloak-operator
-make code/compile
+make setup
 
 ```
 
