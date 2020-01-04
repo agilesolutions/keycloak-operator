@@ -11,7 +11,7 @@ A Kubernetes Operator based on the Operator SDK for creating and syncing resourc
 GOTO [katacoda and run this](https://www.katacoda.com/courses/kubernetes/launch-single-node-cluster)
 
 ```
-curl -LO https://dl.google.com/go/go1.12.3.linux-amd64.tar.gz
+curl -LO https://dl.google.com/go/go1.13.5.linux-amd64.tar.gz
 tar -C /usr/local -xzf go1.12.3.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 mkdir /root/go
