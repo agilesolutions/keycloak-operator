@@ -16,8 +16,6 @@ tmp
 # HTML file from test coverage
 *.html
 
-# Temporary e2e Test Files
-deploy/empty-init.yaml
 
 # Test coverage
 *.coverprofile
