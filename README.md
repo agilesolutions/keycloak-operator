@@ -71,6 +71,8 @@ make cluster/clean
 
 [Understand GO modules to support versioned modules](https://github.com/golang/go/wiki/Modules)
 
+[Operator SDK User Guilde](https://github.com/operator-framework/operator-sdk/blob/master/doc/user-guide.md#go-modules)
+
 GOTO [kubernetes playground](https://www.katacoda.com/courses/kubernetes/playground)
 
 ```
