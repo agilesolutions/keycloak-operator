@@ -69,6 +69,8 @@ make cluster/clean
 
 [Read the guide](https://github.com/agilesolutions/keycloak-operator/blob/master/docs/building.md)
 
+[Understand GO modules to support versioned modules](https://github.com/golang/go/wiki/Modules)
+
 GOTO [kubernetes playground](https://www.katacoda.com/courses/kubernetes/playground)
 
 ```
