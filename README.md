@@ -96,6 +96,27 @@ make setup/operator-sdk
 make code/gen
 ```
 
+## Problem with module manager
+
+```
+
+dependency manager "modules" requires working directory to be in $GOPATH/src and GO111MODULE=on, or outside of $GOPATH/src and GO111MODULE="on", "auto", or unset. 
+
+
+docker pull quay.io/keycloak/keycloak:7.0.1
+
+docker run -ti --name rob --entrypoint /bin/bash quay.io/keycloak/keycloak:7.0.1
+
+cat /opt/jboss/tools/docker-entrypoint.sh
+
+
+if [ "$DB_VENDOR" != "h2" ]; then
+    /bin/sh /opt/jboss/tools/databases/change-database.sh $DB_VENDOR
+fi
+
+
+```
+
 ## Help and Documentation
 
 The documentation might be found in the  [docs](./docs/README.asciidoc) directory.
