@@ -81,12 +81,13 @@ export GOBIN=/usr/local/go/bin
 export PATH=$PATH:$(go env GOPATH)/bin
 go env GOPATH
 
-curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+#curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 
 mkdir -p $GOPATH/src/github.com/keycloak/keycloak-operator
 cd $GOPATH/src/github.com/keycloak
 git clone https://github.com/keycloak/keycloak-operator.git
 cd keycloak-operator
+make setup/mod
 make setup/operator-sdk
 make code/compile
 ```
