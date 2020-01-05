@@ -67,6 +67,8 @@ make cluster/clean
 
 ## building controller
 
+[Read the guide](https://github.com/agilesolutions/keycloak-operator/blob/master/docs/building.md)
+
 GOTO [kubernetes playground](https://www.katacoda.com/courses/kubernetes/playground)
 
 ```
