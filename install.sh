@@ -6,6 +6,7 @@ mkdir /root/go
 export GOPATH=/root/go
 export GOBIN=/usr/local/go/bin
 export PATH=$PATH:$(go env GOPATH)/bin
+export GO111MODULE=auto
 go env GOPATH
 
 #curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
