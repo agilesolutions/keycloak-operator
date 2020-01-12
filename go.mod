@@ -1,4 +1,4 @@
-module github.com/keycloak/keycloak-operator
+module github.com/agilesolutions/keycloak-operator
 
 require (
 	cloud.google.com/go v0.46.3 // indirect
