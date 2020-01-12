@@ -27,14 +27,6 @@ func (i *KeycloakReconciler) Reconcile(clusterState *common.ClusterState, cr *kc
 	desired = desired.AddAction(i.GetKeycloakServiceMonitorDesiredState(clusterState, cr))
 	desired = desired.AddAction(i.GetKeycloakGrafanaDashboardDesiredState(clusterState, cr))
 
-	if !cr.Spec.ExternalDatabase.Enabled {
-		desired = desired.AddAction(i.getDatabaseSecretDesiredState(clusterState, cr))
-		desired = desired.AddAction(i.getPostgresqlPersistentVolumeClaimDesiredState(clusterState, cr))
-		desired = desired.AddAction(i.getPostgresqlDeploymentDesiredState(clusterState, cr))
-	} else {
-		desired = desired.AddAction(i.getPostgresqlServiceEndpointsDesiredState(clusterState, cr))
-	}
-	desired = desired.AddAction(i.getPostgresqlServiceDesiredState(clusterState, cr))
 
 	desired = desired.AddAction(i.getKeycloakServiceDesiredState(clusterState, cr))
 	desired = desired.AddAction(i.getKeycloakDiscoveryServiceDesiredState(clusterState, cr))
